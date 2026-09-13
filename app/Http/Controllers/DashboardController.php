@@ -6,7 +6,6 @@ use App\Http\Resources\DashboardResource;
 use App\Models\Ticket;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
 class DashboardController extends Controller
