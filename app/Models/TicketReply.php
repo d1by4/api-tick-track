@@ -6,17 +6,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class TicketReply extends Model
 {
-    protected $fillable=[
+    protected $fillable = [
         'ticket_id',
         'user_id',
-        'conten',
+        'content',
     ];
 
-    public function ticket(){
-        return $this->belongTo(Ticket::class);
+    public function ticket()
+    {
+        return $this->belongsTo(Ticket::class);
     }
 
-    public function user(){
-        return $this->belongTo(User::class);
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }
